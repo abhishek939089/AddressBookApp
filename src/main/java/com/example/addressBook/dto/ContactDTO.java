@@ -1,12 +1,13 @@
 package com.example.addressBook.dto;
 
-import lombok.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public @Data class ContactDTO {
+public class ContactDTO {
     private Long id;
     private String name;
     private String email;

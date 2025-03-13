@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ContactDTO {
+public @Data class ContactDTO {
     private Long id;
     private String name;
     private String email;

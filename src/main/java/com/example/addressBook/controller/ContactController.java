@@ -1,8 +1,9 @@
 package com.example.addressBook.controller;
 
 import com.example.addressBook.dto.ContactDTO;
-import com.example.addressBook.service.ContactService;
+import com.example.addressBook.service.IContactService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -17,9 +18,10 @@ import java.util.List;
 @RequestMapping("/api/contacts")
 public class ContactController {
 
-    private final ContactService contactService;
+    private IContactService contactService;
 
-    public ContactController(ContactService contactService) {
+    @Autowired
+    public ContactController(IContactService contactService) {
         this.contactService = contactService;
     }
 
@@ -27,7 +29,6 @@ public class ContactController {
     public ResponseEntity<List<ContactDTO>> getAllContacts() {
         log.info("Fetching all contacts");
         List<ContactDTO> contacts = contactService.getAllContacts();
-        log.info("Retrieved {} contacts", contacts.size());
         return ResponseEntity.ok(contacts);
     }
 
@@ -56,6 +57,6 @@ public class ContactController {
     public ResponseEntity<Void> deleteContact(@PathVariable Long id) {
         log.info("Deleting contact with ID: {}", id);
         contactService.deleteContact(id);
-        return ResponseEntity.noContent().build(); // 204 No Content
+        return ResponseEntity.noContent().build();
     }
 }

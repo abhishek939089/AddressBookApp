@@ -5,6 +5,7 @@ import com.example.addressBook.exceptions.AddressBookException;
 import com.example.addressBook.model.Contact;
 import com.example.addressBook.repository.ContactRepository;
 import com.example.addressBook.mapper.ContactMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
@@ -16,6 +17,7 @@ public class ContactServiceImpl implements IContactService {
     private ContactRepository contactRepository;
     private ContactMapper contactMapper;
 
+    @Autowired
     public ContactServiceImpl(ContactRepository contactRepository, ContactMapper contactMapper) {
         this.contactRepository = contactRepository;
         this.contactMapper = contactMapper;
@@ -23,45 +25,65 @@ public class ContactServiceImpl implements IContactService {
 
     @Override
     public List<ContactDTO> getAllContacts() {
-        return contactRepository.findAll()
-                .stream()
-                .map(contactMapper::toDTO)
-                .collect(Collectors.toList());
+        try {
+            return contactRepository.findAll()
+                    .stream()
+                    .map(contactMapper::toDTO)
+                    .collect(Collectors.toList());
+        } catch (Exception e) {
+            throw new AddressBookException("Error fetching contacts: " + e.getMessage());
+        }
     }
 
     @Override
     public ContactDTO getContactById(Long id) {
-        Optional<Contact> contact = contactRepository.findById(id);
-        return contact.map(contactMapper::toDTO)
-                .orElseThrow(() -> new AddressBookException("Contact not found with ID: " + id));
+        try {
+            Optional<Contact> contact = contactRepository.findById(id);
+            return contact.map(contactMapper::toDTO)
+                    .orElseThrow(() -> new AddressBookException("Contact not found with ID: " + id));
+        } catch (Exception e) {
+            throw new AddressBookException("Error fetching contact with ID " + id + ": " + e.getMessage());
+        }
     }
 
     @Override
     public ContactDTO addContact(ContactDTO contactDTO) {
-        Contact contact = contactMapper.toEntity(contactDTO);
-        return contactMapper.toDTO(contactRepository.save(contact));
+        try {
+            Contact contact = contactMapper.toEntity(contactDTO);
+            return contactMapper.toDTO(contactRepository.save(contact));
+        } catch (Exception e) {
+            throw new AddressBookException("Error adding contact: " + e.getMessage());
+        }
     }
 
     @Override
     public ContactDTO updateContact(Long id, ContactDTO contactDTO) {
-        Contact contact = contactRepository.findById(id)
-                .orElseThrow(() -> new AddressBookException("Contact not found for update with ID: " + id));
+        try {
+            Contact contact = contactRepository.findById(id)
+                    .orElseThrow(() -> new AddressBookException("Contact not found for update with ID: " + id));
 
-        contact.setName(contactDTO.getName());
-        contact.setEmail(contactDTO.getEmail());
-        contact.setPhone(contactDTO.getPhone());
-        contact.setCity(contactDTO.getCity());
+            contact.setName(contactDTO.getName());
+            contact.setEmail(contactDTO.getEmail());
+            contact.setPhone(contactDTO.getPhone());
+            contact.setCity(contactDTO.getCity());
 
-        return contactMapper.toDTO(contactRepository.save(contact));
+            return contactMapper.toDTO(contactRepository.save(contact));
+        } catch (Exception e) {
+            throw new AddressBookException("Error updating contact with ID " + id + ": " + e.getMessage());
+        }
     }
 
     @Override
     public boolean deleteContact(Long id) {
-        if (contactRepository.existsById(id)) {
-            contactRepository.deleteById(id);
-            return true;
-        } else {
-            throw new AddressBookException("Contact not found for deletion with ID: " + id);
+        try {
+            if (contactRepository.existsById(id)) {
+                contactRepository.deleteById(id);
+                return true;
+            } else {
+                throw new AddressBookException("Contact not found for deletion with ID: " + id);
+            }
+        } catch (Exception e) {
+            throw new AddressBookException("Error deleting contact with ID " + id + ": " + e.getMessage());
         }
     }
 }

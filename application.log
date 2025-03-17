@@ -16,3 +16,43 @@ This generated password is for development use only. Your security configuration
 2025-03-17T12:07:27.332+05:30  WARN 11644 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/contacts.]
 2025-03-17T12:07:38.254+05:30  WARN 11644 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "all"]
 >>>>>>> db58ef5db3ab94763f9da4204a98a3d0c24863f0
+2025-03-17T21:24:36.651+05:30  WARN 15032 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T21:24:37.043+05:30  WARN 15032 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 28ed8e64-f37a-44bb-8437-c7ffc1a38dce
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-17T21:26:51.551+05:30  WARN 15032 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
+2025-03-17T21:29:37.537+05:30  WARN 15032 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
+2025-03-17T21:35:23.602+05:30  WARN 17092 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T21:35:23.714+05:30  WARN 17092 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 48558760-4e7f-45cd-bae6-7955bd64629f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-17T21:35:31.463+05:30  WARN 17092 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
+2025-03-17T21:35:35.755+05:30  WARN 17092 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
+2025-03-17T21:41:05.971+05:30  WARN 17664 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T21:41:06.100+05:30  WARN 17664 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 627907a0-c203-48be-bed8-05f4d9800436
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-17T21:41:12.542+05:30  WARN 17664 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
+2025-03-17T21:48:10.729+05:30  WARN 13768 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T21:48:10.815+05:30  WARN 13768 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 13bcee37-bc65-4c82-838d-9a42d641d2ad
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-17T22:01:46.734+05:30  WARN 14584 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17T22:01:46.836+05:30  WARN 14584 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3fdd2e84-4f79-4f2d-bed2-0da0aba6f625
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+

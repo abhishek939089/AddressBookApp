@@ -5,6 +5,7 @@ import com.example.addressBook.exceptions.AddressBookException;
 import com.example.addressBook.model.Contact;
 import com.example.addressBook.repository.ContactRepository;
 import com.example.addressBook.mapper.ContactMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
@@ -16,6 +17,7 @@ public class ContactServiceImpl implements IContactService {
     private ContactRepository contactRepository;
     private ContactMapper contactMapper;
 
+    @Autowired
     public ContactServiceImpl(ContactRepository contactRepository, ContactMapper contactMapper) {
         this.contactRepository = contactRepository;
         this.contactMapper = contactMapper;

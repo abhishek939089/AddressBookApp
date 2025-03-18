@@ -1,58 +1,210 @@
-2025-03-17T11:36:26.592+05:30  WARN 3956 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-<<<<<<< HEAD
-2025-03-17T14:12:47.479+05:30  WARN 1480 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T15:52:43.847+05:30  WARN 1788 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T16:23:53.417+05:30  WARN 7884 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T16:23:53.515+05:30  WARN 7884 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-03-18T00:00:02.631+05:30  WARN 1396 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T10:14:08.344+05:30  WARN 5644 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T10:14:08.445+05:30  WARN 5644 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 19ac2c39-847a-4c47-8535-c20a03f354fd
+Using generated security password: 36571ef1-5fea-44c4-a496-ededd5d5ff9e
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-03-17T16:24:18.668+05:30  WARN 7884 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-2025-03-17T16:25:25.356+05:30  WARN 7884 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-=======
-2025-03-17T12:05:41.517+05:30  WARN 11644 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T12:07:27.332+05:30  WARN 11644 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/contacts.]
-2025-03-17T12:07:38.254+05:30  WARN 11644 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "all"]
->>>>>>> db58ef5db3ab94763f9da4204a98a3d0c24863f0
-2025-03-17T21:24:36.651+05:30  WARN 15032 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T21:24:37.043+05:30  WARN 15032 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-03-18T10:14:31.986+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T10:14:44.287+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T10:14:47.111+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-swagger.]
+2025-03-18T10:14:48.348+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T10:19:08.071+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T10:39:20.637+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T10:39:25.672+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T10:39:28.784+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-swagger.]
+2025-03-18T10:39:29.278+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T10:39:37.134+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-swagger.]
+2025-03-18T10:39:39.803+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-docs.]
+2025-03-18T10:39:40.455+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T10:39:47.663+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T10:39:48.100+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T11:09:22.360+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T11:09:22.978+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T11:09:40.065+05:30  WARN 5644 --- [addressBook] [http-nio-8084-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T11:27:57.594+05:30  WARN 15044 --- [addressBook] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T11:27:57.747+05:30  WARN 15044 --- [addressBook] [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 28ed8e64-f37a-44bb-8437-c7ffc1a38dce
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-03-17T21:26:51.551+05:30  WARN 15032 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
-2025-03-17T21:29:37.537+05:30  WARN 15032 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
-2025-03-17T21:35:23.602+05:30  WARN 17092 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T21:35:23.714+05:30  WARN 17092 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 48558760-4e7f-45cd-bae6-7955bd64629f
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-03-17T21:35:31.463+05:30  WARN 17092 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
-2025-03-17T21:35:35.755+05:30  WARN 17092 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
-2025-03-17T21:41:05.971+05:30  WARN 17664 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T21:41:06.100+05:30  WARN 17664 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 627907a0-c203-48be-bed8-05f4d9800436
+Using generated security password: 40c65d74-1fa7-40db-9360-325c64641020
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-03-17T21:41:12.542+05:30  WARN 17664 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource register.]
-2025-03-17T21:48:10.729+05:30  WARN 13768 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T21:48:10.815+05:30  WARN 13768 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-03-18T11:29:22.264+05:30  WARN 17872 --- [addressBook] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T11:29:23.666+05:30  WARN 17872 --- [addressBook] [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 13bcee37-bc65-4c82-838d-9a42d641d2ad
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-03-17T22:01:46.734+05:30  WARN 14584 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-17T22:01:46.836+05:30  WARN 14584 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 3fdd2e84-4f79-4f2d-bed2-0da0aba6f625
+Using generated security password: 98443f5a-163a-4b19-ada9-4c3206514c76
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
+2025-03-18T11:31:17.239+05:30  WARN 1588 --- [addressBook] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T11:31:17.501+05:30  WARN 1588 --- [addressBook] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bdd9daa5-de79-40d5-8233-22aa89a4bcf9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T11:42:04.190+05:30  WARN 11084 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T11:42:04.313+05:30  WARN 11084 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9373c35a-b631-4be8-b778-88abaebb86fc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T11:42:11.385+05:30  WARN 11084 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T11:42:15.106+05:30  WARN 11084 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T11:42:15.511+05:30  WARN 11084 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T11:43:37.505+05:30  WARN 5076 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T11:43:37.598+05:30  WARN 5076 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 303a2285-1a89-4694-b5f1-e071e8cce86d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T11:43:49.458+05:30  WARN 5076 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T11:43:52.138+05:30  WARN 5076 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T11:43:52.615+05:30  WARN 5076 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T11:45:58.420+05:30  WARN 5076 --- [addressBook] [http-nio-8084-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T13:14:38.409+05:30  WARN 9608 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T13:14:38.549+05:30  WARN 9608 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2ac01442-c13d-4d1b-a0b3-f5885ded0405
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T13:14:55.562+05:30  WARN 9608 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T13:15:02.542+05:30  WARN 9608 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-swagger.]
+2025-03-18T13:15:03.989+05:30  WARN 9608 --- [addressBook] [http-nio-8084-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T13:15:08.286+05:30  WARN 9608 --- [addressBook] [http-nio-8084-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-docs.]
+2025-03-18T13:15:08.716+05:30  WARN 9608 --- [addressBook] [http-nio-8084-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T13:15:17.057+05:30  WARN 9608 --- [addressBook] [http-nio-8084-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-swagger.]
+2025-03-18T13:15:17.450+05:30  WARN 9608 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T13:30:17.179+05:30  WARN 20344 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T13:30:17.273+05:30  WARN 20344 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7d4d1960-ae1a-4ca5-a8ea-5f210b396779
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T13:30:31.672+05:30  WARN 20344 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T13:31:31.956+05:30  WARN 12504 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T13:31:32.116+05:30  WARN 12504 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 63c963e3-919b-41bf-9536-ab66db7256b5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T13:31:38.735+05:30  WARN 12504 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:01:08.383+05:30  WARN 12504 --- [addressBook] [http-nio-8084-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:09:36.564+05:30  WARN 12504 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:13:30.834+05:30  WARN 15692 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:13:30.961+05:30  WARN 15692 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0c549ad8-f5d6-4335-8782-eabd56ffcbdf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:13:36.653+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:13:37.594+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:13:39.405+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:13:39.920+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:13:57.246+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:13:57.656+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:13:59.810+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:14:00.293+05:30  WARN 15692 --- [addressBook] [http-nio-8084-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:16:10.778+05:30  WARN 19848 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:16:10.873+05:30  WARN 19848 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6fd3fe08-4e05-4981-b856-c934874dabd8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:16:24.249+05:30  WARN 19848 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger.]
+2025-03-18T14:16:24.779+05:30  WARN 19848 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:19:07.569+05:30  WARN 1760 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:19:07.656+05:30  WARN 1760 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1c1bb17f-fb9e-48ff-ac9b-c318eeb2a014
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:19:15.425+05:30  WARN 1760 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger.]
+2025-03-18T14:19:15.915+05:30  WARN 1760 --- [addressBook] [http-nio-8084-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:19:18.225+05:30  WARN 1760 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger.]
+2025-03-18T14:19:18.611+05:30  WARN 1760 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:21:03.377+05:30  WARN 21364 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:21:03.496+05:30  WARN 21364 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a4ab802b-d204-4f8e-b42c-6322c753ff70
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:21:16.099+05:30  WARN 21364 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:23:53.818+05:30  WARN 20816 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:23:54.224+05:30  WARN 20816 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8ee2d5b9-8152-4c29-a362-b5fe977d649a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:24:01.180+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:24:01.828+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:24:03.718+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:24:04.315+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:24:06.469+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:24:06.861+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:24:23.242+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:24:23.536+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:24:24.478+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:24:34.603+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2025-03-18T14:24:34.914+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2025-03-18T14:24:35.833+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:24:42.105+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger.]
+2025-03-18T14:24:42.517+05:30  WARN 20816 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:26:47.482+05:30  WARN 20036 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:26:47.577+05:30  WARN 20036 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 85a0ebba-9b61-4291-b4d3-4433b59dd066
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:28:18.768+05:30  WARN 19108 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:28:18.854+05:30  WARN 19108 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 661e9b7b-00bb-4086-bf68-b47ecfdf6e02
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:28:25.118+05:30  WARN 19108 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger.]
+2025-03-18T14:28:25.572+05:30  WARN 19108 --- [addressBook] [http-nio-8084-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:28:27.982+05:30  WARN 19108 --- [addressBook] [http-nio-8084-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger.]
+2025-03-18T14:28:28.397+05:30  WARN 19108 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:28:30.797+05:30  WARN 19108 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2025-03-18T14:28:31.196+05:30  WARN 19108 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-03-18T14:29:40.657+05:30  WARN 20936 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:29:40.746+05:30  WARN 20936 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d7cf7f43-dbcb-4e94-bb0e-5911573d20dd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:29:47.310+05:30  WARN 20936 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:29:59.433+05:30  WARN 20936 --- [addressBook] [http-nio-8084-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:30:07.895+05:30  WARN 20936 --- [addressBook] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2025-03-18T14:30:14.224+05:30  WARN 20936 --- [addressBook] [http-nio-8084-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:30:48.166+05:30  WARN 5004 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:30:48.291+05:30  WARN 5004 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ece64c70-cff2-4898-8f1d-1dab04dbcaca
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:30:55.444+05:30  WARN 5004 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-03-18T14:31:43.288+05:30  WARN 7476 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T14:31:43.390+05:30  WARN 7476 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 797efbab-de50-4325-8fc8-454e927b15e2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-18T14:31:50.386+05:30  WARN 7476 --- [addressBook] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']

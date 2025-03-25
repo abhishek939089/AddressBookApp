@@ -1,47 +1,585 @@
-2025-03-19T11:11:20.051+05:30  WARN 17440 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-19T11:11:20.330+05:30  WARN 17440 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-03-25T10:24:41.860+05:30  WARN 12400 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-25T10:24:42.644+05:30  WARN 12400 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 12eb0bc9-3433-4e06-9692-cc45bc209d18
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-03-19T11:33:29.044+05:30  WARN 14404 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-19T11:33:29.233+05:30  WARN 14404 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 8facba14-6dba-4623-b783-9b097d6d75ed
+Using generated security password: 3f13bf27-a8fd-42a4-a2e3-0941f5fae470
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-03-19T11:33:31.718+05:30 DEBUG 14404 --- [addressBook] [restartedMain] .a.r.l.a.MessagingMessageListenerAdapter : Inferred argument type for public void com.example.addressBook.service.MessageConsumer.receiveMessage(java.lang.String) is class java.lang.String
-2025-03-19T11:33:31.767+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : No global properties bean
-2025-03-19T11:33:31.854+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Starting Rabbit listener container.
-2025-03-19T11:33:31.870+05:30  INFO 14404 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2025-03-19T11:33:32.289+05:30  INFO 14404 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#52c06768:0/SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909]
-2025-03-19T11:33:32.303+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Initializing declarations
-2025-03-19T11:33:32.352+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,1)
-2025-03-19T11:33:32.417+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x0000025f81b38c48 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909]
-2025-03-19T11:33:32.422+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Exchange 'addressbook.exchange'
-2025-03-19T11:33:32.469+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Queue 'addressbook.queue'
-2025-03-19T11:33:32.604+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Binding destination [addressbook.queue (QUEUE)] to exchange [addressbook.exchange] with routing key [addressbook.routingkey]
-2025-03-19T11:33:32.643+05:30 DEBUG 14404 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Declarations finished
-2025-03-19T11:33:32.705+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x0000025f81b3ef78 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909]
-2025-03-19T11:33:32.746+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Starting consumer Consumer@1c89e634: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2025-03-19T11:33:32.930+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Started on queue 'addressbook.queue' with tag amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q: Consumer@1c89e634: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909], acknowledgeMode=AUTO local queue size=0
-2025-03-19T11:33:32.954+05:30 DEBUG 14404 --- [addressBook] [pool-2-thread-3] o.s.a.r.listener.BlockingQueueConsumer   : ConsumeOK: Consumer@1c89e634: tags=[[amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909], acknowledgeMode=AUTO local queue size=0
-2025-03-19T11:35:32.350+05:30  WARN 14404 --- [addressBook] [http-nio-8084-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "sendToQueue"]
-2025-03-19T11:35:45.269+05:30 DEBUG 14404 --- [addressBook] [http-nio-8084-exec-4] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,2)
-2025-03-19T11:35:45.270+05:30 DEBUG 14404 --- [addressBook] [http-nio-8084-exec-4] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitTemplate$$Lambda/0x0000025f81bacb20 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,2), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909]
-2025-03-19T11:35:45.281+05:30 DEBUG 14404 --- [addressBook] [http-nio-8084-exec-4] o.s.amqp.rabbit.core.RabbitTemplate      : Publishing message [(Body:'[B@54d8b82f(byte[101])' MessageProperties [headers={}, contentType=text/plain, contentEncoding=UTF-8, contentLength=101, deliveryMode=PERSISTENT, priority=0, deliveryTag=0])] on exchange [addressbook.exchange], routingKey = [addressbook.routingkey]
-2025-03-19T11:35:45.327+05:30 DEBUG 14404 --- [addressBook] [pool-2-thread-4] o.s.a.r.listener.BlockingQueueConsumer   : Storing delivery for consumerTag: 'amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q' with deliveryTag: '1' in Consumer@1c89e634: tags=[[amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909], acknowledgeMode=AUTO local queue size=0
-2025-03-19T11:35:45.329+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Received message: (Body:'[B@73da48fa(byte[101])' MessageProperties [headers={}, contentType=text/plain, contentEncoding=UTF-8, contentLength=0, receivedDeliveryMode=PERSISTENT, priority=0, redelivered=false, receivedExchange=addressbook.exchange, receivedRoutingKey=addressbook.routingkey, deliveryTag=1, consumerTag=amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q, consumerQueue=addressbook.queue])
-2025-03-19T11:35:45.374+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] .a.r.l.a.MessagingMessageListenerAdapter : Processing [GenericMessage [payload=Contact Info: ContactDTO(id=null, name=sharma, email=sharma@example.com, phone=8575857585, city=null), headers={amqp_receivedDeliveryMode=PERSISTENT, amqp_receivedExchange=addressbook.exchange, amqp_deliveryTag=1, amqp_consumerQueue=addressbook.queue, amqp_redelivered=false, amqp_receivedRoutingKey=addressbook.routingkey, amqp_contentEncoding=UTF-8, amqp_retryCount=0, id=649128d9-3caa-0e9c-e698-b4e23cc92233, amqp_consumerTag=amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q, amqp_lastInBatch=false, contentType=text/plain, timestamp=1742364345352}]]
-2025-03-19T11:35:54.292+05:30  WARN 14404 --- [addressBook] [http-nio-8084-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
-2025-03-19T11:36:53.871+05:30 DEBUG 14404 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutting down Rabbit listener container
-2025-03-19T11:36:53.885+05:30 DEBUG 14404 --- [addressBook] [pool-2-thread-5] o.s.a.r.listener.BlockingQueueConsumer   : Received cancelOk for tag amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q (addressbook.queue); Consumer@1c89e634: tags=[[amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909], acknowledgeMode=AUTO local queue size=0
-2025-03-19T11:36:53.888+05:30  INFO 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
-2025-03-19T11:36:54.168+05:30  INFO 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
-2025-03-19T11:36:54.168+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Cancelling Consumer@1c89e634: tags=[[amq.ctag-dCF3OqbC9KeqtGSmUWqk_Q]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909], acknowledgeMode=AUTO local queue size=0
-2025-03-19T11:36:54.170+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Closing Rabbit Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@1aa861ea Shared Rabbit Connection: SimpleConnection@7916e208 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64909]
-2025-03-19T11:36:54.171+05:30 DEBUG 14404 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1)
-2025-03-19T11:36:54.232+05:30 DEBUG 14404 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,2)
-2025-03-19T11:36:54.252+05:30 DEBUG 14404 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2025-03-25T10:25:00.310+05:30 DEBUG 12400 --- [addressBook] [restartedMain] .a.r.l.a.MessagingMessageListenerAdapter : Inferred argument type for public void com.example.addressBook.service.MessageConsumer.receiveMessage(java.lang.String) is class java.lang.String
+2025-03-25T10:25:00.661+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : No global properties bean
+2025-03-25T10:25:01.159+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Starting Rabbit listener container.
+2025-03-25T10:25:01.176+05:30  INFO 12400 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-03-25T10:25:02.322+05:30  INFO 12400 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7bbb4d71:0/SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587]
+2025-03-25T10:25:02.405+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Initializing declarations
+2025-03-25T10:25:02.693+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T10:25:02.931+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000002ab2db36038 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@5f84f8b8 Shared Rabbit Connection: SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587]
+2025-03-25T10:25:02.935+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Exchange 'addressbook.exchange'
+2025-03-25T10:25:03.008+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Queue 'addressbook.queue'
+2025-03-25T10:25:03.029+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Binding destination [addressbook.queue (QUEUE)] to exchange [addressbook.exchange] with routing key [addressbook.routingkey]
+2025-03-25T10:25:03.048+05:30 DEBUG 12400 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Declarations finished
+2025-03-25T10:25:03.074+05:30 DEBUG 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000002ab2db44480 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@5f84f8b8 Shared Rabbit Connection: SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587]
+2025-03-25T10:25:03.131+05:30 DEBUG 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Starting consumer Consumer@707fa697: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-03-25T10:25:03.388+05:30 DEBUG 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Started on queue 'addressbook.queue' with tag amq.ctag-D1Mk41dBPto3ECVOgy66Fg: Consumer@707fa697: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@5f84f8b8 Shared Rabbit Connection: SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587], acknowledgeMode=AUTO local queue size=0
+2025-03-25T10:25:03.404+05:30 DEBUG 12400 --- [addressBook] [pool-2-thread-3] o.s.a.r.listener.BlockingQueueConsumer   : ConsumeOK: Consumer@707fa697: tags=[[amq.ctag-D1Mk41dBPto3ECVOgy66Fg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@5f84f8b8 Shared Rabbit Connection: SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587], acknowledgeMode=AUTO local queue size=0
+2025-03-25T10:53:31.181+05:30 DEBUG 12400 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutting down Rabbit listener container
+2025-03-25T10:53:31.597+05:30  INFO 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-03-25T10:53:31.627+05:30 DEBUG 12400 --- [addressBook] [pool-2-thread-4] o.s.a.r.listener.BlockingQueueConsumer   : Received cancelOk for tag amq.ctag-D1Mk41dBPto3ECVOgy66Fg (addressbook.queue); Consumer@707fa697: tags=[[amq.ctag-D1Mk41dBPto3ECVOgy66Fg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@5f84f8b8 Shared Rabbit Connection: SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587], acknowledgeMode=AUTO local queue size=0
+2025-03-25T10:53:32.203+05:30  INFO 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-03-25T10:53:32.213+05:30 DEBUG 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Cancelling Consumer@707fa697: tags=[[amq.ctag-D1Mk41dBPto3ECVOgy66Fg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@5f84f8b8 Shared Rabbit Connection: SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587], acknowledgeMode=AUTO local queue size=0
+2025-03-25T10:53:32.219+05:30 DEBUG 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Closing Rabbit Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@5f84f8b8 Shared Rabbit Connection: SimpleConnection@4fdec4e1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54587]
+2025-03-25T10:53:32.227+05:30 DEBUG 12400 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T10:53:33.412+05:30 DEBUG 12400 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2025-03-25T10:54:12.498+05:30  WARN 14028 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-25T10:54:12.652+05:30  WARN 14028 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3125797c-8d74-4496-acc8-5d22b9b5f305
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-25T10:54:14.748+05:30 DEBUG 14028 --- [addressBook] [restartedMain] .a.r.l.a.MessagingMessageListenerAdapter : Inferred argument type for public void com.example.addressBook.service.MessageConsumer.receiveMessage(java.lang.String) is class java.lang.String
+2025-03-25T10:54:14.772+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : No global properties bean
+2025-03-25T10:54:14.847+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Starting Rabbit listener container.
+2025-03-25T10:54:14.857+05:30  INFO 14028 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-03-25T10:54:15.144+05:30  INFO 14028 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#40edef1f:0/SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744]
+2025-03-25T10:54:15.155+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Initializing declarations
+2025-03-25T10:54:15.203+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T10:54:15.241+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000002ce3ab30c48 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@10b64d6 Shared Rabbit Connection: SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744]
+2025-03-25T10:54:15.242+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Exchange 'addressbook.exchange'
+2025-03-25T10:54:15.266+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Queue 'addressbook.queue'
+2025-03-25T10:54:15.286+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Binding destination [addressbook.queue (QUEUE)] to exchange [addressbook.exchange] with routing key [addressbook.routingkey]
+2025-03-25T10:54:15.344+05:30 DEBUG 14028 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Declarations finished
+2025-03-25T10:54:15.381+05:30 DEBUG 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000002ce3ab36f78 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@10b64d6 Shared Rabbit Connection: SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744]
+2025-03-25T10:54:15.407+05:30 DEBUG 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Starting consumer Consumer@2f9233b7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-03-25T10:54:15.479+05:30 DEBUG 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Started on queue 'addressbook.queue' with tag amq.ctag-h3oA7J71lTniU1bTcIsguA: Consumer@2f9233b7: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@10b64d6 Shared Rabbit Connection: SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744], acknowledgeMode=AUTO local queue size=0
+2025-03-25T10:54:15.528+05:30 DEBUG 14028 --- [addressBook] [pool-2-thread-3] o.s.a.r.listener.BlockingQueueConsumer   : ConsumeOK: Consumer@2f9233b7: tags=[[amq.ctag-h3oA7J71lTniU1bTcIsguA]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@10b64d6 Shared Rabbit Connection: SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:18:05.084+05:30 DEBUG 14028 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutting down Rabbit listener container
+2025-03-25T11:18:05.204+05:30  INFO 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-03-25T11:18:05.214+05:30 DEBUG 14028 --- [addressBook] [pool-2-thread-4] o.s.a.r.listener.BlockingQueueConsumer   : Received cancelOk for tag amq.ctag-h3oA7J71lTniU1bTcIsguA (addressbook.queue); Consumer@2f9233b7: tags=[[amq.ctag-h3oA7J71lTniU1bTcIsguA]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@10b64d6 Shared Rabbit Connection: SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:18:05.653+05:30  INFO 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-03-25T11:18:05.654+05:30 DEBUG 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Cancelling Consumer@2f9233b7: tags=[[amq.ctag-h3oA7J71lTniU1bTcIsguA]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@10b64d6 Shared Rabbit Connection: SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:18:05.656+05:30 DEBUG 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Closing Rabbit Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@10b64d6 Shared Rabbit Connection: SimpleConnection@55b9def2 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57744]
+2025-03-25T11:18:05.658+05:30 DEBUG 14028 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T11:18:05.965+05:30 DEBUG 14028 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2025-03-25T11:18:45.469+05:30  WARN 17316 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-25T11:18:45.614+05:30  WARN 17316 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f6886637-d757-4ffc-8271-e7a39b4ce0d7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-25T11:18:51.821+05:30 DEBUG 17316 --- [addressBook] [restartedMain] .a.r.l.a.MessagingMessageListenerAdapter : Inferred argument type for public void com.example.addressBook.service.MessageConsumer.receiveMessage(java.lang.String) is class java.lang.String
+2025-03-25T11:18:51.916+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : No global properties bean
+2025-03-25T11:18:52.070+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Starting Rabbit listener container.
+2025-03-25T11:18:52.095+05:30  INFO 17316 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-03-25T11:18:52.462+05:30  INFO 17316 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#61e56073:0/SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169]
+2025-03-25T11:18:52.932+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Initializing declarations
+2025-03-25T11:18:53.056+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T11:18:53.144+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x00000265c7b35470 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@30dce48c Shared Rabbit Connection: SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169]
+2025-03-25T11:18:53.146+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Exchange 'addressbook.exchange'
+2025-03-25T11:18:53.287+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Queue 'addressbook.queue'
+2025-03-25T11:18:53.431+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Binding destination [addressbook.queue (QUEUE)] to exchange [addressbook.exchange] with routing key [addressbook.routingkey]
+2025-03-25T11:18:53.581+05:30 DEBUG 17316 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Declarations finished
+2025-03-25T11:18:53.732+05:30 DEBUG 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x00000265c7b3b7b8 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@30dce48c Shared Rabbit Connection: SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169]
+2025-03-25T11:18:54.161+05:30 DEBUG 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Starting consumer Consumer@27d68367: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:18:54.753+05:30 DEBUG 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Started on queue 'addressbook.queue' with tag amq.ctag-Wc2bfI8croPxyqLieSUOaw: Consumer@27d68367: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@30dce48c Shared Rabbit Connection: SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:18:54.808+05:30 DEBUG 17316 --- [addressBook] [pool-2-thread-3] o.s.a.r.listener.BlockingQueueConsumer   : ConsumeOK: Consumer@27d68367: tags=[[amq.ctag-Wc2bfI8croPxyqLieSUOaw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@30dce48c Shared Rabbit Connection: SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:36:53.437+05:30 DEBUG 17316 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutting down Rabbit listener container
+2025-03-25T11:36:53.577+05:30  INFO 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-03-25T11:36:53.586+05:30 DEBUG 17316 --- [addressBook] [pool-2-thread-4] o.s.a.r.listener.BlockingQueueConsumer   : Received cancelOk for tag amq.ctag-Wc2bfI8croPxyqLieSUOaw (addressbook.queue); Consumer@27d68367: tags=[[amq.ctag-Wc2bfI8croPxyqLieSUOaw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@30dce48c Shared Rabbit Connection: SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:36:54.084+05:30  INFO 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-03-25T11:36:54.087+05:30 DEBUG 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Cancelling Consumer@27d68367: tags=[[amq.ctag-Wc2bfI8croPxyqLieSUOaw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@30dce48c Shared Rabbit Connection: SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:36:54.089+05:30 DEBUG 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Closing Rabbit Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@30dce48c Shared Rabbit Connection: SimpleConnection@447ab2ba [delegate=amqp://guest@127.0.0.1:5672/, localPort=58169]
+2025-03-25T11:36:54.092+05:30 DEBUG 17316 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T11:36:54.813+05:30 DEBUG 17316 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2025-03-25T11:37:36.112+05:30  WARN 13164 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-25T11:37:36.518+05:30  WARN 13164 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3221f2bc-3e46-4f2c-96cf-58fb380131f4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-25T11:37:36.613+05:30  INFO 13164 --- [addressBook] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-25T11:37:37.204+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-25T11:37:40.083+05:30 DEBUG 13164 --- [addressBook] [restartedMain] .a.r.l.a.MessagingMessageListenerAdapter : Inferred argument type for public void com.example.addressBook.service.MessageConsumer.receiveMessage(java.lang.String) is class java.lang.String
+2025-03-25T11:37:40.137+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : No global properties bean
+2025-03-25T11:37:40.432+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Starting Rabbit listener container.
+2025-03-25T11:37:40.451+05:30  INFO 13164 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-03-25T11:37:40.720+05:30  INFO 13164 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#228dbd55:0/SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849]
+2025-03-25T11:37:40.730+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Initializing declarations
+2025-03-25T11:37:40.765+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T11:37:40.811+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000002a2a7b2d6a8 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@56f1e65f Shared Rabbit Connection: SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849]
+2025-03-25T11:37:40.812+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Exchange 'addressbook.exchange'
+2025-03-25T11:37:40.843+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Queue 'addressbook.queue'
+2025-03-25T11:37:40.920+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Binding destination [addressbook.queue (QUEUE)] to exchange [addressbook.exchange] with routing key [addressbook.routingkey]
+2025-03-25T11:37:41.145+05:30 DEBUG 13164 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Declarations finished
+2025-03-25T11:37:41.164+05:30 DEBUG 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000002a2a7b33a00 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@56f1e65f Shared Rabbit Connection: SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849]
+2025-03-25T11:37:41.179+05:30 DEBUG 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Starting consumer Consumer@3bea73d7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:37:41.220+05:30 DEBUG 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Started on queue 'addressbook.queue' with tag amq.ctag-wJBbq4P-_d5_jLv84hBzRw: Consumer@3bea73d7: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@56f1e65f Shared Rabbit Connection: SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:37:41.253+05:30 DEBUG 13164 --- [addressBook] [pool-2-thread-3] o.s.a.r.listener.BlockingQueueConsumer   : ConsumeOK: Consumer@3bea73d7: tags=[[amq.ctag-wJBbq4P-_d5_jLv84hBzRw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@56f1e65f Shared Rabbit Connection: SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:38:47.422+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts
+2025-03-25T11:39:16.466+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:39:16.472+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:39:16.476+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:39:29.237+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:39:29.249+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:39:29.251+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:39:57.798+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts
+2025-03-25T11:39:57.814+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/contacts
+2025-03-25T11:39:57.821+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:39:57.822+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/contacts
+2025-03-25T11:40:18.718+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/1
+2025-03-25T11:40:18.728+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/1
+2025-03-25T11:40:18.731+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:40:18.732+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/1
+2025-03-25T11:40:26.026+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/12
+2025-03-25T11:40:26.037+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/12
+2025-03-25T11:40:26.040+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:40:26.043+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/12
+2025-03-25T11:43:12.465+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/12
+2025-03-25T11:43:12.478+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/12
+2025-03-25T11:43:12.481+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:43:12.482+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/12
+2025-03-25T11:43:12.503+05:30 ERROR 13164 --- [addressBook] [http-nio-8084-exec-6] c.e.a.controller.ContactController       : Error deleting contact
+
+com.example.addressBook.exceptions.AddressBookException: Error deleting contact with ID 12: Contact not found for deletion with ID: 12
+	at com.example.addressBook.service.ContactServiceImpl.deleteContact(ContactServiceImpl.java:104) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:55) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:430) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.evaluate(CacheAspectSupport.java:565) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:447) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:409) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:65) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.3.jar:6.2.3]
+	at com.example.addressBook.service.ContactServiceImpl$$SpringCGLIB$$0.deleteContact(<generated>) ~[classes/:na]
+	at com.example.addressBook.controller.ContactController.deleteContact(ContactController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-03-25T11:43:16.054+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:43:16.055+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:43:16.056+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:43:17.913+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:43:17.918+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:43:17.919+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:43:45.807+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts
+2025-03-25T11:43:45.813+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/contacts
+2025-03-25T11:43:45.817+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:43:45.819+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/contacts
+2025-03-25T11:44:23.770+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/14
+2025-03-25T11:44:23.782+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/14
+2025-03-25T11:44:23.784+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:44:23.785+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/14
+2025-03-25T11:44:32.561+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/14
+2025-03-25T11:44:32.570+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/14
+2025-03-25T11:44:32.572+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:44:32.573+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/14
+2025-03-25T11:44:32.591+05:30 ERROR 13164 --- [addressBook] [http-nio-8084-exec-5] c.e.a.controller.ContactController       : Error deleting contact
+
+com.example.addressBook.exceptions.AddressBookException: Error deleting contact with ID 14: Contact not found for deletion with ID: 14
+	at com.example.addressBook.service.ContactServiceImpl.deleteContact(ContactServiceImpl.java:104) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:55) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:430) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.evaluate(CacheAspectSupport.java:565) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:447) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:409) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:65) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.3.jar:6.2.3]
+	at com.example.addressBook.service.ContactServiceImpl$$SpringCGLIB$$0.deleteContact(<generated>) ~[classes/:na]
+	at com.example.addressBook.controller.ContactController.deleteContact(ContactController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-03-25T11:44:34.749+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:44:34.750+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:44:34.751+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:44:35.592+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:44:35.594+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:44:35.595+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:48:51.155+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts
+2025-03-25T11:48:51.163+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/contacts
+2025-03-25T11:48:51.165+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:48:51.165+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/contacts
+2025-03-25T11:51:32.480+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:51:32.483+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:51:32.483+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:51:34.116+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:51:34.122+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:51:34.129+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:53:00.743+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/2
+2025-03-25T11:53:00.755+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/2
+2025-03-25T11:53:00.760+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:53:00.761+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/2
+2025-03-25T11:53:03.764+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/3
+2025-03-25T11:53:04.055+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/3
+2025-03-25T11:53:04.058+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:53:04.059+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/3
+2025-03-25T11:53:07.361+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts/4
+2025-03-25T11:53:07.369+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing DELETE /api/contacts/4
+2025-03-25T11:53:07.372+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:53:07.373+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured DELETE /api/contacts/4
+2025-03-25T11:53:09.032+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:53:09.033+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:53:09.034+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:53:09.934+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:53:09.935+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:53:09.937+05:30 DEBUG 13164 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:57:14.873+05:30 DEBUG 13164 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutting down Rabbit listener container
+2025-03-25T11:57:14.944+05:30  INFO 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-03-25T11:57:14.950+05:30 DEBUG 13164 --- [addressBook] [pool-2-thread-4] o.s.a.r.listener.BlockingQueueConsumer   : Received cancelOk for tag amq.ctag-wJBbq4P-_d5_jLv84hBzRw (addressbook.queue); Consumer@3bea73d7: tags=[[amq.ctag-wJBbq4P-_d5_jLv84hBzRw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@56f1e65f Shared Rabbit Connection: SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:57:15.034+05:30  INFO 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-03-25T11:57:15.034+05:30 DEBUG 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Cancelling Consumer@3bea73d7: tags=[[amq.ctag-wJBbq4P-_d5_jLv84hBzRw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@56f1e65f Shared Rabbit Connection: SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:57:15.035+05:30 DEBUG 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Closing Rabbit Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@56f1e65f Shared Rabbit Connection: SimpleConnection@3655c756 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58849]
+2025-03-25T11:57:15.037+05:30 DEBUG 13164 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T11:57:15.292+05:30 DEBUG 13164 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2025-03-25T11:57:38.767+05:30  WARN 17440 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-25T11:57:38.940+05:30  WARN 17440 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 06708eae-c418-4c51-95eb-35fa853c9f60
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-25T11:57:39.008+05:30  INFO 17440 --- [addressBook] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-25T11:57:39.422+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-25T11:57:40.996+05:30 DEBUG 17440 --- [addressBook] [restartedMain] .a.r.l.a.MessagingMessageListenerAdapter : Inferred argument type for public void com.example.addressBook.service.MessageConsumer.receiveMessage(java.lang.String) is class java.lang.String
+2025-03-25T11:57:41.031+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : No global properties bean
+2025-03-25T11:57:41.097+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Starting Rabbit listener container.
+2025-03-25T11:57:41.107+05:30  INFO 17440 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-03-25T11:57:41.346+05:30  INFO 17440 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#68812faf:0/SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582]
+2025-03-25T11:57:41.355+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Initializing declarations
+2025-03-25T11:57:41.389+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T11:57:41.420+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x00000208dbb2f1d8 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@270cec83 Shared Rabbit Connection: SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582]
+2025-03-25T11:57:41.421+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Exchange 'addressbook.exchange'
+2025-03-25T11:57:41.439+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Queue 'addressbook.queue'
+2025-03-25T11:57:41.453+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Binding destination [addressbook.queue (QUEUE)] to exchange [addressbook.exchange] with routing key [addressbook.routingkey]
+2025-03-25T11:57:41.493+05:30 DEBUG 17440 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Declarations finished
+2025-03-25T11:57:41.518+05:30 DEBUG 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x00000208dbb3d658 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@270cec83 Shared Rabbit Connection: SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582]
+2025-03-25T11:57:41.537+05:30 DEBUG 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Starting consumer Consumer@76657991: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:57:41.724+05:30 DEBUG 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Started on queue 'addressbook.queue' with tag amq.ctag-s-XukomL88zSVsVt5HKrHg: Consumer@76657991: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@270cec83 Shared Rabbit Connection: SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:57:41.779+05:30 DEBUG 17440 --- [addressBook] [pool-2-thread-3] o.s.a.r.listener.BlockingQueueConsumer   : ConsumeOK: Consumer@76657991: tags=[[amq.ctag-s-XukomL88zSVsVt5HKrHg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@270cec83 Shared Rabbit Connection: SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582], acknowledgeMode=AUTO local queue size=0
+2025-03-25T11:58:04.749+05:30 DEBUG 17440 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:58:04.775+05:30 DEBUG 17440 --- [addressBook] [http-nio-8084-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:58:04.781+05:30 DEBUG 17440 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T11:58:07.762+05:30 DEBUG 17440 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T11:58:07.943+05:30 DEBUG 17440 --- [addressBook] [http-nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T11:58:07.946+05:30 DEBUG 17440 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:02:10.494+05:30 DEBUG 17440 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutting down Rabbit listener container
+2025-03-25T12:02:10.511+05:30 DEBUG 17440 --- [addressBook] [pool-2-thread-4] o.s.a.r.listener.BlockingQueueConsumer   : Received cancelOk for tag amq.ctag-s-XukomL88zSVsVt5HKrHg (addressbook.queue); Consumer@76657991: tags=[[amq.ctag-s-XukomL88zSVsVt5HKrHg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@270cec83 Shared Rabbit Connection: SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582], acknowledgeMode=AUTO local queue size=0
+2025-03-25T12:02:10.512+05:30  INFO 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-03-25T12:02:11.481+05:30  INFO 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-03-25T12:02:11.483+05:30 DEBUG 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Cancelling Consumer@76657991: tags=[[amq.ctag-s-XukomL88zSVsVt5HKrHg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@270cec83 Shared Rabbit Connection: SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582], acknowledgeMode=AUTO local queue size=0
+2025-03-25T12:02:11.486+05:30 DEBUG 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Closing Rabbit Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@270cec83 Shared Rabbit Connection: SimpleConnection@5cd7a77b [delegate=amqp://guest@127.0.0.1:5672/, localPort=59582]
+2025-03-25T12:02:11.488+05:30 DEBUG 17440 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T12:02:11.583+05:30 DEBUG 17440 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2025-03-25T12:02:33.638+05:30  WARN 7588 --- [addressBook] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-25T12:02:33.917+05:30  WARN 7588 --- [addressBook] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8fc4b2c1-3afa-4b4f-9abe-dd2df09987cc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-25T12:02:33.957+05:30  INFO 7588 --- [addressBook] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-25T12:02:34.254+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-03-25T12:02:35.841+05:30 DEBUG 7588 --- [addressBook] [restartedMain] .a.r.l.a.MessagingMessageListenerAdapter : Inferred argument type for public void com.example.addressBook.service.MessageConsumer.receiveMessage(java.lang.String) is class java.lang.String
+2025-03-25T12:02:35.872+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : No global properties bean
+2025-03-25T12:02:35.952+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Starting Rabbit listener container.
+2025-03-25T12:02:35.964+05:30  INFO 7588 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-03-25T12:02:36.145+05:30  INFO 7588 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7f2eee0a:0/SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662]
+2025-03-25T12:02:36.158+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Initializing declarations
+2025-03-25T12:02:36.193+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Creating cached Rabbit Channel from AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T12:02:36.223+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000001fc01b2f1b8 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@79c97b50 Shared Rabbit Connection: SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662]
+2025-03-25T12:02:36.224+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Exchange 'addressbook.exchange'
+2025-03-25T12:02:36.234+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : declaring Queue 'addressbook.queue'
+2025-03-25T12:02:36.248+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Binding destination [addressbook.queue (QUEUE)] to exchange [addressbook.exchange] with routing key [addressbook.routingkey]
+2025-03-25T12:02:36.264+05:30 DEBUG 7588 --- [addressBook] [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Declarations finished
+2025-03-25T12:02:36.279+05:30 DEBUG 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.amqp.rabbit.core.RabbitTemplate      : Executing callback RabbitAdmin$$Lambda/0x000001fc01b3d658 on RabbitMQ Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@79c97b50 Shared Rabbit Connection: SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662]
+2025-03-25T12:02:36.293+05:30 DEBUG 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Starting consumer Consumer@301238b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-03-25T12:02:36.331+05:30 DEBUG 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Started on queue 'addressbook.queue' with tag amq.ctag-ZXGh5a8uTyT1XBhqI0cfPg: Consumer@301238b6: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@79c97b50 Shared Rabbit Connection: SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662], acknowledgeMode=AUTO local queue size=0
+2025-03-25T12:02:36.337+05:30 DEBUG 7588 --- [addressBook] [pool-2-thread-3] o.s.a.r.listener.BlockingQueueConsumer   : ConsumeOK: Consumer@301238b6: tags=[[amq.ctag-ZXGh5a8uTyT1XBhqI0cfPg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@79c97b50 Shared Rabbit Connection: SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662], acknowledgeMode=AUTO local queue size=0
+2025-03-25T12:03:29.826+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:03:29.848+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:03:29.852+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:03:35.406+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:03:35.613+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:03:35.618+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:05:50.314+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:05:50.318+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:05:50.319+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:05:51.193+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:05:51.199+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:05:51.200+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:06:47.975+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:06:47.979+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:06:47.980+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:06:48.972+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:06:49.007+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:06:49.017+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:08:26.898+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:08:26.902+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:08:26.903+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:08:27.522+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:08:27.527+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:08:27.528+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:09:15.282+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:09:15.283+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:09:15.284+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:09:16.138+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:09:16.145+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:09:16.147+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:09:27.538+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:09:27.541+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:09:27.541+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:09:28.170+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:09:28.191+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:09:28.192+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:10:43.689+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:10:43.703+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:10:43.705+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:10:44.776+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:10:44.800+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:10:44.811+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:11:26.078+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:11:26.080+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:11:26.082+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:11:26.850+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:11:26.859+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:11:26.860+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:11:37.581+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:11:37.582+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:11:37.584+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:11:38.180+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:11:38.206+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:11:38.209+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:13:11.569+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:13:11.572+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:13:11.573+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:13:12.370+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:13:12.374+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:13:12.375+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:13:20.225+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:13:20.226+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:13:20.228+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:13:20.859+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:13:20.863+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:13:20.863+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:13:59.735+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:13:59.737+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:13:59.738+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:14:00.557+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:14:00.589+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:14:00.590+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:14:36.110+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:14:36.112+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:14:36.114+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:14:37.040+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/contacts
+2025-03-25T12:14:37.061+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:14:37.072+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/contacts
+2025-03-25T12:15:06.536+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/contacts
+2025-03-25T12:15:06.558+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/contacts
+2025-03-25T12:15:06.567+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-03-25T12:15:06.569+05:30 DEBUG 7588 --- [addressBook] [http-nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/contacts
+2025-03-25T12:15:49.513+05:30 DEBUG 7588 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutting down Rabbit listener container
+2025-03-25T12:15:49.583+05:30  INFO 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-03-25T12:15:49.587+05:30 DEBUG 7588 --- [addressBook] [pool-2-thread-4] o.s.a.r.listener.BlockingQueueConsumer   : Received cancelOk for tag amq.ctag-ZXGh5a8uTyT1XBhqI0cfPg (addressbook.queue); Consumer@301238b6: tags=[[amq.ctag-ZXGh5a8uTyT1XBhqI0cfPg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@79c97b50 Shared Rabbit Connection: SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662], acknowledgeMode=AUTO local queue size=0
+2025-03-25T12:15:49.874+05:30  INFO 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-03-25T12:15:49.875+05:30 DEBUG 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Cancelling Consumer@301238b6: tags=[[amq.ctag-ZXGh5a8uTyT1XBhqI0cfPg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@79c97b50 Shared Rabbit Connection: SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662], acknowledgeMode=AUTO local queue size=0
+2025-03-25T12:15:49.879+05:30 DEBUG 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Closing Rabbit Channel: Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@79c97b50 Shared Rabbit Connection: SimpleConnection@8ff48a9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59662]
+2025-03-25T12:15:49.880+05:30 DEBUG 7588 --- [addressBook] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Closing cached Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1)
+2025-03-25T12:15:50.043+05:30 DEBUG 7588 --- [addressBook] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already

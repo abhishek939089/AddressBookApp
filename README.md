@@ -13,14 +13,12 @@ The project follows a structured Git branching strategy:
 - `UC3-dto` - Data Transfer Object (DTO) implementation.
 - `UC4-servicelayer` - Service layer implementation for business logic.
 - `UC5-securepassword` - Password encryption for security.
-
-## Features
-
-- REST API for managing address book entries.
-- Spring Boot backend with MySQL database.
-- DTO implementation for structured data transfer.
-- Service layer for business logic handling.
-- Secure password storage and authentication.
+- `UC6 - User Registration and Login` - Register new users with validation and Login functionality with JWT token generation.
+- `UC7 - Forgot and Reset Password` - Send a reset password link via email and Validate token and reset user password securely.
+- `UC8 - Swagger UI Integration` - Integrated **Swagger UI** for API documentation. Provides real-time documentation and API testing.
+- `UC9 - Sending Emails` - Email service configured using **JavaMailSender**. SMTP configuration with `MailConfig.java`. Sends notifications and password reset links.
+- `UC10 - Redis for Authentication` - Implemented Redis for token caching. Improves authentication efficiency by reducing DB hits. Manages session tokens securely with expiration.
+- `UC11 - RabbitMQ Integration` - Integrated RabbitMQ for asynchronous message processing. Queue management for handling heavy traffic scenarios. Improves system scalability and decoupling.
 
 ## Setup Instructions
 
